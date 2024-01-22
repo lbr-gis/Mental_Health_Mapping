@@ -1,15 +1,32 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <title>Mental Health Map</title>
-      <meta name="robots" content="noindex">
-   </head>
-<body>
+<!DOCTYPE html> 
+<html> 
+<head> 
+</head> 
+<body> 
+	<iframe style="width: 100%;border:3px solid black; 
+	" src="https://app.powerbi.com/view?r=eyJrIjoiNGQ2NzhhNmUtMDFlOC00NDk0LTkxNTYtZTU1OGUzMDFkZjhmIiwidCI6IjJhOGIyYzE2LTJlOWUtNGRjZS1hOTdiLWEwYjM0ZTgwM2EyMiJ9" id="Iframe"></iframe> 
+	<!--iframe tag-->
+	
+	<script> 
+		// Selecting the iframe element 
+		var frame = document.getElementById("Iframe"); 
+		
+		// Adjusting the iframe height onload event 
+		frame.onload = function() 
+		// function execute while load the iframe 
+		{ 
+		// set the height of the iframe as 
+		// the height of the iframe content 
+		frame.style.height = 
+		frame.contentWindow.document.body.scrollHeight + 'px'; 
+		
 
-<div id="content">
-<div style="height: 100%">
-   <iframe width="960" height="596" src="https://app.powerbi.com/view?r=eyJrIjoiMzVkNDRjZTItYWQ1Zi00YzZhLTk5ZmYtNDI0YWJmN2QzNTg1IiwidCI6IjJhOGIyYzE2LTJlOWUtNGRjZS1hOTdiLWEwYjM0ZTgwM2EyMiJ9" frameborder="0" style="position:absolute; clip-path: inset(0 0 37px 0);allowFullScreen=" true"=""></iframe>
-    </div>
-</div>
-</body>
+		// set the width of the iframe as the 
+		// width of the iframe content 
+		frame.style.width = 
+		frame.contentWindow.document.body.scrollWidth+'px'; 
+			
+		} 
+		</script> 
+</body> 
 </html>
